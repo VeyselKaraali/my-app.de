@@ -1,3 +1,7 @@
 <div class="slideshow-container">
-  <img ngIf="img-slideshow" src="assets/img/{{images[currentImage]}}" alt="">
+  <img *ngIf="showImage" class="img-slideshow" src="assets/img/{{images[currentImage]}}" alt="">
+</div>
+
+<div class="slideshow-container slideshow-overlay">
+  <p>Bring engineering to the next level</p>
 </div>
